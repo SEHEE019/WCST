@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.project.practice.layoutinflaterexample.MainActivity">
+
+        <Button
+            android:id="@+id/selectBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="선택"
+            android:textSize="20dp"/>
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/Radio1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="남성"
+                android:textSize="20dp"/>
+            <RadioButton
+                android:id="@+id/radio2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="여성"
+                android:textSize="20dp"/>
+        </RadioGroup>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|center_horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="하루 종일"
+                android:textSize="20dp"
+                />
+            <CheckBox
+                android:id="@+id/alldayCheck"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
