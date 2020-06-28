@@ -1,5 +1,5 @@
-# WCSD
-Write Code Someday
+# WCST
+Write Code Sometimes
 
 ## LIST
 ### Documents
