@@ -8,4 +8,5 @@ Write Code Someday
  * Android
     - App Components
     - Parsing
- * Sort Algorithm
+ * Algorithm
+    - Stack/Queue
