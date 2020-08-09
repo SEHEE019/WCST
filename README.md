@@ -1,5 +1,5 @@
-# WCSD
-Write Code Someday
+# WCST
+Write Code Sometimes
 
 ## LIST
 ### Documents
@@ -8,4 +8,5 @@ Write Code Someday
  * Android
     - App Components
     - Parsing
- * Sort Algorithm
+ * Algorithm
+    - Stack/Queue
