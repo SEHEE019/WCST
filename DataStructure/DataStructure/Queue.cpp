@@ -7,7 +7,7 @@ typedef struct q_
 	int front, rear;
 	int capacity;
 } Queue;
-// 서버(Queue)
+// 서버(Queue) 
 void Push(Queue* q, int data)
 {
 	if ((q->rear + 1) % q->capacity == q->front)
