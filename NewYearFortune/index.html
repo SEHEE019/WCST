@@ -6,6 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>2021년 신년운세!</title>
+    <script type="text/javascript" src="https://new-year.spartacodingclub.kr/newyear.js"></script>
     <style>
         .mytitle {
             color: darkred; 
@@ -43,7 +44,7 @@
             display: flex;
             flex-direction: row;
             justify-content: center;
-            flex-wrap: wrap;
+            flex-wrap: wrap; /*이미지가 무조건 자기 사이즈를 유지하도록 설정*/
 
             width: 1200px;
             margin: auto;
@@ -61,6 +62,23 @@
         .rtan10 { background-image: url('https://new-year.spartacodingclub.kr/images/yearS10.png'); }
         .rtan11 { background-image: url('https://new-year.spartacodingclub.kr/images/yearS11.png'); }
         .rtan12 { background-image: url('https://new-year.spartacodingclub.kr/images/yearS12.png'); }
+
+        @media screen and (max-width: 780px) {
+            body {
+                background-position: 70px -70px;
+                background-size: 500px;
+            }
+            .rtans {
+                width: 100%;
+            }
+            .mytitle {
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+            .rtans > a {
+                color: darkred;
+            }
+        }
     </style>
 </head>
 <body>
@@ -69,7 +87,7 @@
         <h2>by 르탄, 믿거나 말거나~</h2>
     </div>
     <div class="rtans">
-        <a class="rtan1" href="#">쥐</a>
+        <a class="rtan1" href="result.html">쥐</a>
         <a class="rtan2" href="#">소</a>
         <a class="rtan3" href="#">호랑이</a>
         <a class="rtan4" href="#">토끼</a>

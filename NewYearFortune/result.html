@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Yeon+Sung&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2021년 신년운세!</title>
+    <script type="text/javascript" src="https://new-year.spartacodingclub.kr/newyear.js"></script>
+    <style>
+        body {
+            background-color: ivory;
+            background-image: url(https://new-year.spartacodingclub.kr/images/pattern.png);
+            background-position: 600px 100px;
+            background-repeat: no-repeat;
+        }
+        * {font-family: 'Yeon Sung', cursive;}
+        .rtan {
+            display: block;
+            width: 200px;
+            height: 200px;
+            border: solid 3px darkred;
+            background-color: darkred;
+            border-radius: 200px;
+            box-shadow: 0px 0px 10px 0px darkred;
+            margin: 10px;
+            background-image: url('https://new-year.spartacodingclub.kr/images/yearS1.png');
+            text-align: center;
+            font-size: 32px;
+            color: white;
+            text-decoration: none;
+            background-size: cover;
+            background-position: center;
+            margin: 80px auto 50px auto;
+        }
+        .title {
+            color: darkred;
+            text-align: center;
+            font-size: 32px;
+        }
+        .msg {
+            color: darkred;
+            text-align: center;
+            font-size: 32px;
+            line-height: 48px;
+        }
+        .btns {
+            /* 가운데 정렬 코드 : display, justify-content, flex-direction이 세트로 와야 한다.*/
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+        }
+        .btn-back {
+            width: 150px;
+            height: 50px;
+
+            color: darkred;
+            border: 2px solid darkred;
+
+            border-radius: 10px;
+
+            font-size: 20px;
+            cursor: pointer; /*마우스를 올렸을 때 포인터 모양으로 변경*/
+        }
+        .btn-share {
+            width: 150px;
+            height: 50px;
+
+            color: white;
+            border: 2px solid darkred;
+            background-color: darkred;
+
+            border-radius: 10px;
+
+            font-size: 20px;
+            cursor: pointer; /*마우스를 올렸을 때 포인터 모양으로 변경*/
+            margin-left: 10px;
+        }
+        @media screen and (max-width: 780px)  {
+            body {
+                background-position: 70px -70px;
+                background-size: 500px;
+            }
+            .rtan {
+                margin-top: 50px;
+            }
+            .msg {
+                font-size: 24px;
+                line-height: 36px;
+                margin-bottom: 36px;
+                padding: 10px;
+            }
+            .msg > br {
+                display: none; /*보이지 않게 처리해라*/
+            }
+        }
+    </style>
+    <script>
+        function back() {
+            let url = window.location.href;
+            let new_url = url.split('result.html')[0] + 'index.html';
+            window.location.href = new_url;
+        }
+
+        function share() {
+            var t = document.createElement("textarea");
+            document.body.appendChild(t);
+            t.value = window.location.href;
+            t.select();
+            document.execCommand('copy');
+            document.body.removeChild(t);
+            alert('복사 완료!');
+        }
+    </script>
+</head>
+<body>
+    <div class="rtan">쥐</div>
+    <h1 class="title">2021년 쥐띠의 운세는!</h1>
+    <p class="msg">
+        마음을 알아주는 따뜻한 사람을 만날 것이야!<br/>
+        일이 잘 안 풀리는 것 같아도<br/>
+        연말에는 호탕하게 웃을 수 있을 지어니<br/>
+        너무 걱정하지 말고 하루하루 잘 나아가봐~
+    </p>
+    <div class="btns">
+        <button onclick="back();" class="btn-back">뒤로가기</button>
+        <button onclick="share();" class="btn-share">공유하기</button>
+    </div>
+</body>
+</html>
